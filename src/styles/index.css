@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#root {
+  @apply h-screen bg-neutral-800 py-12 flex justify-center items-start overflow-auto;
+}
