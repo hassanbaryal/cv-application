@@ -6,3 +6,19 @@
 #root {
   @apply h-screen bg-neutral-800 py-12 flex justify-center items-start overflow-auto;
 }
+
+.form-section {
+  @apply flex flex-col gap-1;
+}
+
+.form-section input[type="text"] {
+  @apply border-2 rounded border-gray-400 text-gray-500;
+}
+
+.invisible {
+  @apply hidden;
+}
+
+ul {
+  @apply pl-8;
+}
