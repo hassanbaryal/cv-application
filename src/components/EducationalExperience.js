@@ -14,15 +14,7 @@ export default class EducationalExperience extends React.Component {
       dateEnd: '',
       id: uniqid(),
       isHovering: false,
-      experiences: [{
-        school: 'Belfast Elementary School',
-        degree: 'BENG',
-        major: 'Biomedical Engineering, Co-op',
-        dateStart: '2012-12-01',
-        dateEnd: '2012-12-31',
-        id: 23,
-        isHovering: false,
-      }],
+      experiences: [],
     };
     this.handleChange = this.handleChange.bind(this);
     this.submitForm = this.submitForm.bind(this);
@@ -32,15 +24,6 @@ export default class EducationalExperience extends React.Component {
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
     this.deleteExperience = this.deleteExperience.bind(this);
     this.toggleForm = this.toggleForm.bind(this);
-    const test = {
-      school: 'Belfast Elementary School',
-      degree: 'BENG',
-      major: 'Biomedical Engineering, Co-op',
-      dateStart: '2012-12-01',
-      dateEnd: '2012-12-31',
-      id: 23,
-      isHovering: false,
-    }
   }
 
   handleChange(e) {
@@ -94,8 +77,6 @@ export default class EducationalExperience extends React.Component {
       alert('Please input the required fields (marked by *)');
   };
 
-  // Submit Form method, calls addExperience method if true
-
   addExperience() {
     this.setState({
       experiences: this.state.experiences.concat({
@@ -132,6 +113,7 @@ export default class EducationalExperience extends React.Component {
       dateStart: '',
       dateEnd: '',
       id: uniqid(),
+      isHovering: false,
     });
   };
 
