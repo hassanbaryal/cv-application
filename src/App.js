@@ -10,7 +10,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="w-8/12 h-full p-7 bg-white shadow-md shadow-gray-800/50 flex flex-col gap-4">
+      <div className="w-8/12 min-h-full p-7 bg-white shadow-md shadow-gray-800/50 flex flex-col gap-4">
         <GeneralInformation />
         <EducationalExperience />
       </div>
